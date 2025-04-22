@@ -19,3 +19,4 @@ C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.csproj.CoreCompileInputs.cache
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.exe
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.pdb
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.dashboard.resources

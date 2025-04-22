@@ -31,5 +31,12 @@ namespace Employee_Management_System
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dashboard dashboard = new dashboard();
+            dashboard.Show();        // Show non-modal (can go back to Form1)
+            this.Hide();
+        }
     }
 }
