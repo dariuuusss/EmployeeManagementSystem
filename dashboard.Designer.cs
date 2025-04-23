@@ -30,6 +30,12 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.DGattendance = new System.Windows.Forms.DataGridView();
@@ -64,6 +70,12 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.searchBox);
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
@@ -73,14 +85,72 @@
             this.tabPage1.Text = "Home";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(164, 214);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(378, 84);
+            this.textBox2.TabIndex = 7;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(564, 171);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(82, 29);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Search";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // searchBox
+            // 
+            this.searchBox.Location = new System.Drawing.Point(161, 174);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(381, 22);
+            this.searchBox.TabIndex = 4;
+            this.searchBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchBox_Enter);
+            this.searchBox.Enter += new System.EventHandler(this.searchBox_Enter);
+            this.searchBox.Leave += new System.EventHandler(this.searchBox_Leave);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(308, 305);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 40);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Update Employee";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(574, 305);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 40);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Remove Employee";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(76, 304);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 41);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Add Employee";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 45);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.Location = new System.Drawing.Point(148, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 16);
+            this.label1.Size = new System.Drawing.Size(498, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CRUD Operations";
+            this.label1.Text = "Employee Management System";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage2
@@ -214,5 +284,11 @@
         private System.Windows.Forms.DataGridView DGattendance;
         private System.Windows.Forms.DataGridView DGemployee;
         private System.Windows.Forms.DataGridView DGlogs;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox searchBox;
     }
 }

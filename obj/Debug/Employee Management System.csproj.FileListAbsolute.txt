@@ -53,3 +53,6 @@ C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee.861BF793.Up2Date
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.add.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.delete.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.update.resources

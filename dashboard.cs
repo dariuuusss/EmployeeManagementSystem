@@ -16,6 +16,9 @@ namespace Employee_Management_System
         {
             InitializeComponent();
             this.Load += dashboard_Load;
+            searchBox.Enter += searchBox_Enter;
+            searchBox.Leave += searchBox_Leave;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,6 +46,43 @@ namespace Employee_Management_System
             DGattendance.DataSource = dbManager.GetAllAttendance();
             DGemployee.DataSource = dbManager.GetAllEmployees();
             DGlogs.DataSource = dbManager.GetAllLogs();
+            searchBox.Text = "Search employee...";
+            searchBox.ForeColor = Color.Gray;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            add addEmp = new add();
+            addEmp.Show();
+        }
+        private void searchBox_Enter(object sender, EventArgs e)
+        {
+            if (searchBox.Text == "Search employee...")
+            {
+                searchBox.Text = "";
+                searchBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void searchBox_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(searchBox.Text))
+            {
+                searchBox.Text = "Search employee...";
+                searchBox.ForeColor = Color.Gray;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            update updateEmp = new update();
+            updateEmp.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            delete deleteEmp = new delete();
+            deleteEmp.Show();
         }
     }
 }
