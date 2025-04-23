@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textUsername = new System.Windows.Forms.TextBox();
+            this.textPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(452, 22);
-            this.textBox1.TabIndex = 0;
+            this.textUsername.Location = new System.Drawing.Point(143, 155);
+            this.textUsername.Name = "textUsername";
+            this.textUsername.Size = new System.Drawing.Size(452, 22);
+            this.textUsername.TabIndex = 0;
+            this.textUsername.TextChanged += new System.EventHandler(this.textUsername_TextChanged);
             // 
-            // textBox2
+            // textPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 199);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(452, 22);
-            this.textBox2.TabIndex = 1;
+            this.textPassword.Location = new System.Drawing.Point(143, 199);
+            this.textPassword.Name = "textPassword";
+            this.textPassword.Size = new System.Drawing.Size(452, 22);
+            this.textPassword.TabIndex = 1;
             // 
             // button1
             // 
@@ -99,8 +100,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textPassword);
+            this.Controls.Add(this.textUsername);
             this.Name = "Form1";
             this.Text = "Employee Management System";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -112,8 +113,8 @@
         #endregion
 
         private System.Windows.Forms.FontDialog fontDialog1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textUsername;
+        private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;

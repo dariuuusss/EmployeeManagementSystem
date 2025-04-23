@@ -20,3 +20,36 @@ C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.exe
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.pdb
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.dashboard.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Google.Protobuf.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\MySql.Data.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Buffers.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Memory.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\ZstdSharp.dll
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Google.Protobuf.pdb
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Google.Protobuf.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\MySql.Data.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Buffers.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Memory.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee.861BF793.Up2Date

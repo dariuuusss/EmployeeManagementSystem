@@ -33,10 +33,32 @@ namespace Employee_Management_System
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {/*
+            var dbManager = new EMPdb();
+            bool isAuthenticated = dbManager.AuthenticateUser(textUsername.Text, textPassword.Text);
+
+            if (isAuthenticated)
+            {
+                MessageBox.Show("Login Successful. Click OK to view Application's Dashboard", "Sucess!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                dashboard dashboard = new dashboard();
+                dashboard.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Login Failed. Please check your username and password.", "Invalid Credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            */
             dashboard dashboard = new dashboard();
-            dashboard.Show();        // Show non-modal (can go back to Form1)
+            dashboard.Show();
             this.Hide();
+        }
+
+        private void textUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

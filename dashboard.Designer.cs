@@ -30,18 +30,24 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.DGattendance = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.DGemployee = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.DGlogs = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGattendance)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGemployee)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGlogs)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -67,37 +73,6 @@
             this.tabPage1.Text = "Home";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(790, 421);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Attendance";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(790, 421);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Employees";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(790, 421);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Logs";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -108,28 +83,94 @@
             this.label1.Text = "CRUD Operations";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.DGattendance);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(790, 421);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Attendance";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // DGattendance
+            // 
+            this.DGattendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGattendance.Location = new System.Drawing.Point(0, 30);
+            this.DGattendance.Name = "DGattendance";
+            this.DGattendance.RowHeadersWidth = 51;
+            this.DGattendance.RowTemplate.Height = 24;
+            this.DGattendance.Size = new System.Drawing.Size(787, 391);
+            this.DGattendance.TabIndex = 1;
+            this.DGattendance.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(118, 79);
+            this.label2.Location = new System.Drawing.Point(276, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(159, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "attendance of employees";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.DGemployee);
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(790, 421);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Employees";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // DGemployee
+            // 
+            this.DGemployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGemployee.Location = new System.Drawing.Point(0, 30);
+            this.DGemployee.Name = "DGemployee";
+            this.DGemployee.RowHeadersWidth = 51;
+            this.DGemployee.RowTemplate.Height = 24;
+            this.DGemployee.Size = new System.Drawing.Size(789, 390);
+            this.DGemployee.TabIndex = 1;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 84);
+            this.label3.Location = new System.Drawing.Point(323, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "list of employees";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.DGlogs);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(790, 421);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Logs";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // DGlogs
+            // 
+            this.DGlogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGlogs.Location = new System.Drawing.Point(2, 37);
+            this.DGlogs.Name = "DGlogs";
+            this.DGlogs.RowHeadersWidth = 51;
+            this.DGlogs.RowTemplate.Height = 24;
+            this.DGlogs.Size = new System.Drawing.Size(787, 387);
+            this.DGlogs.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(163, 96);
+            this.label4.Location = new System.Drawing.Point(327, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 16);
             this.label4.TabIndex = 0;
@@ -148,10 +189,13 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGattendance)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGemployee)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGlogs)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -167,5 +211,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView DGattendance;
+        private System.Windows.Forms.DataGridView DGemployee;
+        private System.Windows.Forms.DataGridView DGlogs;
     }
 }
