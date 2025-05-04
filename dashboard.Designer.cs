@@ -46,6 +46,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.DGlogs = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
+            this.LogOut = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -70,6 +71,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.LogOut);
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.searchBox);
@@ -246,6 +248,16 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "logs of processes";
             // 
+            // LogOut
+            // 
+            this.LogOut.Location = new System.Drawing.Point(704, 9);
+            this.LogOut.Name = "LogOut";
+            this.LogOut.Size = new System.Drawing.Size(85, 25);
+            this.LogOut.TabIndex = 8;
+            this.LogOut.Text = "Log Out";
+            this.LogOut.UseVisualStyleBackColor = true;
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,5 +302,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button LogOut;
     }
 }

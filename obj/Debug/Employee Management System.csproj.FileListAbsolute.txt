@@ -56,3 +56,5 @@ C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.add.resources
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.delete.resources
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.update.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.signUp.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.ForgotPassword.resources

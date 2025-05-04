@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ForgetPassword = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // textUsername
@@ -49,6 +50,7 @@
             // 
             this.textPassword.Location = new System.Drawing.Point(143, 199);
             this.textPassword.Name = "textPassword";
+            this.textPassword.PasswordChar = '*';
             this.textPassword.Size = new System.Drawing.Size(452, 22);
             this.textPassword.TabIndex = 1;
             // 
@@ -70,6 +72,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Sign Up";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -91,11 +94,23 @@
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // ForgetPassword
+            // 
+            this.ForgetPassword.AutoSize = true;
+            this.ForgetPassword.Location = new System.Drawing.Point(309, 236);
+            this.ForgetPassword.Name = "ForgetPassword";
+            this.ForgetPassword.Size = new System.Drawing.Size(109, 16);
+            this.ForgetPassword.TabIndex = 6;
+            this.ForgetPassword.TabStop = true;
+            this.ForgetPassword.Text = "Forget Password";
+            this.ForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ForgetPassword_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 387);
+            this.Controls.Add(this.ForgetPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -119,6 +134,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel ForgetPassword;
     }
 }
 

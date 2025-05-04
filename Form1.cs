@@ -33,32 +33,51 @@ namespace Employee_Management_System
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {/*
-            var dbManager = new EMPdb();
-            bool isAuthenticated = dbManager.AuthenticateUser(textUsername.Text, textPassword.Text);
+        {
+            string username = textUsername.Text;
+            string password = textPassword.Text;
 
-            if (isAuthenticated)
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Login Successful. Click OK to view Application's Dashboard", "Sucess!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please enter username and password.");
+                return;
+            }
 
+            EMPdb db = new EMPdb();
+            string role = db.ValidateLogin(username, password);
+
+            if (role != null)
+            {
+                MessageBox.Show("Login successful!");
+
+                // Example: Redirect to Dashboard or Main Menu
+                this.Hide();
                 dashboard dashboard = new dashboard();
                 dashboard.Show();
-                this.Hide();
             }
             else
             {
-                MessageBox.Show("Login Failed. Please check your username and password.", "Invalid Credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid username or password.");
             }
-
-            */
-            dashboard dashboard = new dashboard();
-            dashboard.Show();
-            this.Hide();
         }
 
         private void textUsername_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            signUp signUp = new signUp();
+            signUp.Show();
+            this.Hide();
+        }
+
+        private void ForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgotPassword ForgotPassword = new ForgotPassword();
+            ForgotPassword.Show();
+            this.Hide();
         }
     }
 }

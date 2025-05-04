@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Employee_Management_System
 {
@@ -12,41 +13,110 @@ namespace Employee_Management_System
     {
         private readonly string connectionString = "server=localhost; database=ems; uid=root; pwd='';";
 
-        public bool AuthenticateUser(string username, string password)
+        public bool InsertUser(string username, string password, string email,
+                       string role, string securityQuestion, string securityAnswer)
         {
             using (var conn = new MySqlConnection(connectionString))
-
             {
                 conn.Open();
-                var query = $"SELECT COUNT(1) FROM manager WHERE manager_name=@Username AND password=@Password";
-                using (var cmd = new MySqlCommand(query, conn))
-
+                using (MySqlCommand cmd = new MySqlCommand("register_user", conn))
                 {
-                    cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password);
-                    var count = Convert.ToInt32(cmd.ExecuteScalar());
-                    conn.Close();
-                    return count == 1;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@p_username", username);
+                    cmd.Parameters.AddWithValue("@p_email", email);
+                    cmd.Parameters.AddWithValue("@p_password", password); // Hashing in SQL
+                    cmd.Parameters.AddWithValue("@p_role", role);
+                    cmd.Parameters.AddWithValue("@p_sec_question", securityQuestion);
+                    cmd.Parameters.AddWithValue("@p_sec_answer", securityAnswer);
 
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        return true; // success
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                        return false; // failed
+                    }
                 }
-
             }
-
         }
-        public void InsertUser(string username, string password, string email)
+
+        public string ValidateLogin(string username, string password)
         {
             using (var conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                var query = "INSERT INTO Accounts (Username, Pass, Email) VALUES (@Username, @Pass, @Email)";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Username", username);
-                cmd.Parameters.AddWithValue("@Pass", password);
-                cmd.Parameters.AddWithValue("@Email", email);
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                using (MySqlCommand cmd = new MySqlCommand("validate_login", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@p_username", username);
+                    cmd.Parameters.AddWithValue("@p_password", password);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string role = reader["role"].ToString();
+                            return role; // return user role or "success"
+                        }
+                        else
+                        {
+                            return null; // login failed
+                        }
+                    }
+                }
             }
         }
+
+        public bool ResetPassword(string username, string answer, string newPassword)
+        {
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("update_password_by_username", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@p_username", username);
+                    cmd.Parameters.AddWithValue("@p_answer", answer);
+                    cmd.Parameters.AddWithValue("@p_new_password", newPassword);
+
+                    var successParam = new MySqlParameter("@p_success", MySqlDbType.Bit);
+                    successParam.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(successParam);
+
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        return Convert.ToBoolean(successParam.Value);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
+
+
+        public string GetSecurityQuestion(string username)
+        {
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("SELECT security_question FROM users WHERE username = @username", conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    var result = cmd.ExecuteScalar();
+                    return result?.ToString();
+                }
+            }
+        }
+
+
+
         public void UpdateUser(string username, string password, string email)
         {
             using (var conn = new MySqlConnection(connectionString))

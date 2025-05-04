@@ -84,5 +84,19 @@ namespace Employee_Management_System
             delete deleteEmp = new delete();
             deleteEmp.Show();
         }
+
+        private void LogOut_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Logout",
+                                                  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Form1 login = new Form1();
+                login.Show();
+            }
+        }
     }
 }
