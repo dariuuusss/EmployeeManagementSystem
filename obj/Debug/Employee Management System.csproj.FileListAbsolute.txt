@@ -12,14 +12,6 @@ C:\Users\Darius\Desktop\Bicol University\EDP\Employee Management System\obj\Debu
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Employee Management System.exe.config
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Employee Management System.exe
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Employee Management System.pdb
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.csproj.AssemblyReference.cache
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.Form1.resources
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.Properties.Resources.resources
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.csproj.GenerateResource.cache
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.csproj.CoreCompileInputs.cache
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.exe
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.pdb
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.dashboard.resources
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\BouncyCastle.Cryptography.dll
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\Google.Protobuf.dll
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\K4os.Compression.LZ4.dll
@@ -52,9 +44,17 @@ C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee.861BF793.Up2Date
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.csproj.AssemblyReference.cache
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.add.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.dashboard.resources
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.delete.resources
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.update.resources
-C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.signUp.resources
 C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.ForgotPassword.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.Form1.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.Properties.Resources.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.signUp.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee_Management_System.update.resources
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.csproj.GenerateResource.cache
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.csproj.CoreCompileInputs.cache
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee.861BF793.Up2Date
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.exe
+C:\Users\Darius\Desktop\Bicol University\EDP\EmployeeManagementSystem\obj\Debug\Employee Management System.pdb

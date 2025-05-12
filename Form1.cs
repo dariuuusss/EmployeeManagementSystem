@@ -33,7 +33,7 @@ namespace Employee_Management_System
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {/*
             string username = textUsername.Text;
             string password = textPassword.Text;
 
@@ -58,7 +58,10 @@ namespace Employee_Management_System
             else
             {
                 MessageBox.Show("Invalid username or password.");
-            }
+            }*/
+            this.Hide();
+            dashboard dashboard = new dashboard();
+            dashboard.Show();
         }
 
         private void textUsername_TextChanged(object sender, EventArgs e)

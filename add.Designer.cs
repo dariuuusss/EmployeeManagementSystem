@@ -35,14 +35,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.nameAdd = new System.Windows.Forms.TextBox();
+            this.salaryAdd = new System.Windows.Forms.TextBox();
+            this.ageAdd = new System.Windows.Forms.TextBox();
+            this.addressAdd = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.departmentAdd = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.roleAdd = new System.Windows.Forms.TextBox();
+            this.birthdayPicker = new System.Windows.Forms.DateTimePicker();
+            this.projectSelector = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -100,9 +104,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(40, 215);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 16);
+            this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Department:";
+            this.label6.Text = "Project:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
@@ -115,53 +119,37 @@
             this.label7.Text = "Salary:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox1
+            // nameAdd
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(619, 22);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.nameAdd.Location = new System.Drawing.Point(79, 71);
+            this.nameAdd.Name = "nameAdd";
+            this.nameAdd.Size = new System.Drawing.Size(619, 22);
+            this.nameAdd.TabIndex = 7;
+            this.nameAdd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // salaryAdd
             // 
-            this.textBox2.Location = new System.Drawing.Point(246, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(254, 22);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.salaryAdd.Location = new System.Drawing.Point(130, 264);
+            this.salaryAdd.Name = "salaryAdd";
+            this.salaryAdd.Size = new System.Drawing.Size(254, 22);
+            this.salaryAdd.TabIndex = 10;
+            this.salaryAdd.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox3
+            // ageAdd
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 209);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(254, 22);
-            this.textBox3.TabIndex = 9;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.ageAdd.Location = new System.Drawing.Point(67, 158);
+            this.ageAdd.Name = "ageAdd";
+            this.ageAdd.Size = new System.Drawing.Size(53, 22);
+            this.ageAdd.TabIndex = 11;
+            this.ageAdd.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox4
+            // addressAdd
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 264);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(254, 22);
-            this.textBox4.TabIndex = 10;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(67, 158);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(53, 22);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(93, 113);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(628, 22);
-            this.textBox6.TabIndex = 12;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.addressAdd.Location = new System.Drawing.Point(93, 113);
+            this.addressAdd.Name = "addressAdd";
+            this.addressAdd.Size = new System.Drawing.Size(628, 22);
+            this.addressAdd.TabIndex = 12;
+            this.addressAdd.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // button1
             // 
@@ -183,19 +171,73 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(26, 240);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 16);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Department:";
+            // 
+            // departmentAdd
+            // 
+            this.departmentAdd.AutoSize = true;
+            this.departmentAdd.Location = new System.Drawing.Point(135, 244);
+            this.departmentAdd.Name = "departmentAdd";
+            this.departmentAdd.Size = new System.Drawing.Size(0, 16);
+            this.departmentAdd.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(59, 309);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 16);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Role:";
+            // 
+            // roleAdd
+            // 
+            this.roleAdd.Location = new System.Drawing.Point(130, 309);
+            this.roleAdd.Name = "roleAdd";
+            this.roleAdd.Size = new System.Drawing.Size(253, 22);
+            this.roleAdd.TabIndex = 18;
+            // 
+            // birthdayPicker
+            // 
+            this.birthdayPicker.Location = new System.Drawing.Point(246, 158);
+            this.birthdayPicker.Name = "birthdayPicker";
+            this.birthdayPicker.Size = new System.Drawing.Size(265, 22);
+            this.birthdayPicker.TabIndex = 19;
+            this.birthdayPicker.Value = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            // 
+            // projectSelector
+            // 
+            this.projectSelector.FormattingEnabled = true;
+            this.projectSelector.Location = new System.Drawing.Point(130, 215);
+            this.projectSelector.Name = "projectSelector";
+            this.projectSelector.Size = new System.Drawing.Size(253, 24);
+            this.projectSelector.TabIndex = 20;
+            this.projectSelector.SelectedIndexChanged += new System.EventHandler(this.projectSelector_SelectedIndexChanged);
+            // 
             // add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.projectSelector);
+            this.Controls.Add(this.birthdayPicker);
+            this.Controls.Add(this.roleAdd);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.departmentAdd);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.addressAdd);
+            this.Controls.Add(this.ageAdd);
+            this.Controls.Add(this.salaryAdd);
+            this.Controls.Add(this.nameAdd);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -205,6 +247,7 @@
             this.Controls.Add(this.label1);
             this.Name = "add";
             this.Text = "add";
+            this.Load += new System.EventHandler(this.add_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,13 +262,17 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox nameAdd;
+        private System.Windows.Forms.TextBox salaryAdd;
+        private System.Windows.Forms.TextBox ageAdd;
+        private System.Windows.Forms.TextBox addressAdd;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label departmentAdd;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox roleAdd;
+        private System.Windows.Forms.DateTimePicker birthdayPicker;
+        private System.Windows.Forms.ComboBox projectSelector;
     }
 }

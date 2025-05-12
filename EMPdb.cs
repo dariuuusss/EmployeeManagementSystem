@@ -1,17 +1,25 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Datatypes;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Employee_Management_System
 {
     internal class EMPdb
     {
-        private readonly string connectionString = "server=localhost; database=ems; uid=root; pwd='';";
+        private readonly string connectionString = "server=localhost; database=ems; uid=root; pwd=''; Allow Zero Datetime=True; Convert Zero Datetime=True;";
+
 
         public bool InsertUser(string username, string password, string email,
                        string role, string securityQuestion, string securityAnswer)
@@ -115,33 +123,206 @@ namespace Employee_Management_System
             }
         }
 
-
-
-        public void UpdateUser(string username, string password, string email)
+        public bool AddEmployee(string name, string address, int age,
+                       string birthday, int salary, string project, string role)
         {
             using (var conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                var query = "UPDATE Accounts SET Pass = @Password, Email = @Email WHERE username = @username";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                //cmd.Parameters.AddWithValue("@Id", id);
-                cmd.Parameters.AddWithValue("@Username", username);
-                cmd.Parameters.AddWithValue("@password", password);
-                cmd.Parameters.AddWithValue("@Email", email);
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                using (MySqlCommand cmd = new MySqlCommand("AddNewEmployee", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@emp_name", name);
+                    cmd.Parameters.AddWithValue("@emp_address", address);
+                    cmd.Parameters.AddWithValue("@emp_age", age);
+                    cmd.Parameters.AddWithValue("@emp_role", role);
+                    cmd.Parameters.AddWithValue("@proj_name", project);
+                    cmd.Parameters.AddWithValue("@emp_salary", salary);
+                    DateTime parsedBirthday = DateTime.ParseExact(birthday, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                    cmd.Parameters.Add("@emp_birthday", MySqlDbType.Date).Value = parsedBirthday;
+
+
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        return true; // success
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                        return false; // failed
+                    }
+                }
             }
         }
-        public void DeleteUser(string username)
+        public List<string> GetProjectNames()
         {
-            using (var conn = new MySqlConnection(connectionString))
+            List<string> projectNames = new List<string>();
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString)) // Use MySqlConnection
             {
-                conn.Open();
-                var query = "DELETE FROM accounts WHERE username = @username";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                connection.Open();
+                string query = "SELECT project_name FROM project"; // Assuming table and column names are correct
+
+                MySqlCommand command = new MySqlCommand(query, connection); // Use MySqlCommand
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    projectNames.Add(reader["project_name"].ToString());
+                }
+
+                reader.Close();
+            }
+
+            return projectNames;
+        }
+        public string GetDepartmentByProjectName(string projectName)
+        {
+            string departmentName = string.Empty;
+
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = @"
+                SELECT d.department_name 
+                FROM project p
+                JOIN department d ON p.department_id = d.department_id
+                WHERE p.project_name = @projectName";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@projectName", projectName);
+
+                var result = command.ExecuteScalar();
+                departmentName = result?.ToString();  // Get the department name, or null if not found
+            }
+
+            return departmentName;
+        }
+        public List<Employee> SearchEmployeeByName(string searchTerm)
+        {
+            List<Employee> employeeList = new List<Employee>();
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"
+            SELECT e.employee_id AS 'Employee ID', 
+                   e.name AS 'Name', 
+                   d.department_name AS 'Department Name', 
+                   e.address AS 'Address', 
+                   e.age AS 'Age', 
+                   e.birthday AS 'Birthday', 
+                   s.amount AS 'Salary', 
+                   ep.role AS 'Role', 
+                   p.project_name AS 'Project Name'
+            FROM employee e
+            LEFT JOIN department d ON e.department_id = d.department_id
+            LEFT JOIN salary s ON e.employee_id = s.employee_id
+            LEFT JOIN employee_project ep ON e.employee_id = ep.employee_id
+            LEFT JOIN project p ON ep.project_id = p.project_id
+            WHERE e.name LIKE @searchTerm";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                Employee employee = new Employee
+                                {
+                                    // Handle NULL values using DBNull.Value
+                                    EmployeeID = reader["Employee ID"] != DBNull.Value ? Convert.ToInt32(reader["Employee ID"]) : 0,
+                                    Name = reader["Name"].ToString(),
+                                    DepartmentName = reader["Department Name"] != DBNull.Value ? reader["Department Name"].ToString() : "N/A",
+                                    Address = reader["Address"] != DBNull.Value ? reader["Address"].ToString() : "N/A",
+                                    Age = reader["Age"] != DBNull.Value ? Convert.ToInt32(reader["Age"]) : 0,
+                                    Birthday = reader["Birthday"] != DBNull.Value ? Convert.ToDateTime(reader["Birthday"]) : DateTime.MinValue,
+                                    Salary = reader["Salary"] != DBNull.Value ? Convert.ToDecimal(reader["Salary"]) : 0.00m,
+                                    Role = reader["Role"] != DBNull.Value ? reader["Role"].ToString() : "N/A",
+                                    ProjectName = reader["Project Name"] != DBNull.Value ? reader["Project Name"].ToString() : "N/A"
+                                };
+
+                                employeeList.Add(employee);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error fetching employee details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return employeeList;
+        }
+
+
+
+
+        public bool UpdateEmployeeDetails(int employeeId, string name, string address, int age, string birthday, int salary, string project, string role)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string updateQuery = @"
+                UPDATE employee SET name = @name, address = @address, age = @age, birthday = @birthday 
+                WHERE employee_id = @employeeId;
+
+                UPDATE salary SET amount = @salary WHERE employee_id = @employeeId;
+
+                UPDATE employee_project ep
+                JOIN project p ON ep.project_id = p.project_id
+                SET ep.role = @role, ep.project_id = p.project_id
+                WHERE ep.employee_id = @employeeId AND p.project_name = @project;";
+
+                    MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
+                    cmd.Parameters.AddWithValue("@employeeId", employeeId);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@address", address);
+                    cmd.Parameters.AddWithValue("@age", age);
+                    cmd.Parameters.AddWithValue("@birthday", DateTime.ParseExact(birthday, "yyyy-MM-dd", CultureInfo.InvariantCulture));
+                    cmd.Parameters.AddWithValue("@salary", salary);
+                    cmd.Parameters.AddWithValue("@project", project);
+                    cmd.Parameters.AddWithValue("@role", role);
+
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update Error: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool DeleteEmployee(string name)
+        {
+            
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    var query = "DELETE FROM employee WHERE name = @name";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Delete Error: " + ex.Message);
+                return false;
             }
         }
 
@@ -177,24 +358,14 @@ namespace Employee_Management_System
             using (var conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-
-                string query = @"
-            SELECT 
-                employee_id AS 'Employee ID', 
-                name AS 'Name', 
-                department_id AS 'Department ID'
-            FROM employee";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                    adapter.Fill(dt);
-                }
+                string query = "SELECT * FROM employee_details";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                adapter.Fill(dt);
+                return dt;
             }
-
-            return dt;
-
         }
+
+
 
         public DataTable GetAllLogs()
         {

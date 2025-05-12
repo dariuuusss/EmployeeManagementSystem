@@ -30,12 +30,10 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.addressDelete = new System.Windows.Forms.TextBox();
+            this.ageDelete = new System.Windows.Forms.TextBox();
+            this.salaryDelete = new System.Windows.Forms.TextBox();
+            this.nameDelete = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,7 +42,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchDelete = new System.Windows.Forms.TextBox();
+            this.projectSelectorUpdate = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.departmentDelete = new System.Windows.Forms.Label();
+            this.birthdayPickerDelete = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.roleDelete = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button2
@@ -65,48 +69,35 @@
             this.button1.TabIndex = 28;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox6
+            // addressDelete
             // 
-            this.textBox6.Location = new System.Drawing.Point(105, 169);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(628, 22);
-            this.textBox6.TabIndex = 27;
+            this.addressDelete.Location = new System.Drawing.Point(105, 169);
+            this.addressDelete.Name = "addressDelete";
+            this.addressDelete.Size = new System.Drawing.Size(628, 22);
+            this.addressDelete.TabIndex = 27;
             // 
-            // textBox5
+            // ageDelete
             // 
-            this.textBox5.Location = new System.Drawing.Point(79, 214);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(53, 22);
-            this.textBox5.TabIndex = 26;
+            this.ageDelete.Location = new System.Drawing.Point(79, 214);
+            this.ageDelete.Name = "ageDelete";
+            this.ageDelete.Size = new System.Drawing.Size(53, 22);
+            this.ageDelete.TabIndex = 26;
             // 
-            // textBox4
+            // salaryDelete
             // 
-            this.textBox4.Location = new System.Drawing.Point(142, 320);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(254, 22);
-            this.textBox4.TabIndex = 25;
+            this.salaryDelete.Location = new System.Drawing.Point(142, 320);
+            this.salaryDelete.Name = "salaryDelete";
+            this.salaryDelete.Size = new System.Drawing.Size(254, 22);
+            this.salaryDelete.TabIndex = 25;
             // 
-            // textBox3
+            // nameDelete
             // 
-            this.textBox3.Location = new System.Drawing.Point(142, 265);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(254, 22);
-            this.textBox3.TabIndex = 24;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(258, 211);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(254, 22);
-            this.textBox2.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(91, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(619, 22);
-            this.textBox1.TabIndex = 22;
+            this.nameDelete.Location = new System.Drawing.Point(91, 127);
+            this.nameDelete.Name = "nameDelete";
+            this.nameDelete.Size = new System.Drawing.Size(619, 22);
+            this.nameDelete.TabIndex = 22;
             // 
             // label7
             // 
@@ -120,7 +111,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(52, 271);
+            this.label6.Location = new System.Drawing.Point(52, 292);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 16);
             this.label6.TabIndex = 20;
@@ -180,28 +171,82 @@
             this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // searchBox
+            // searchDelete
             // 
-            this.searchBox.Location = new System.Drawing.Point(139, 71);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(381, 22);
-            this.searchBox.TabIndex = 30;
+            this.searchDelete.Location = new System.Drawing.Point(139, 71);
+            this.searchDelete.Name = "searchDelete";
+            this.searchDelete.Size = new System.Drawing.Size(381, 22);
+            this.searchDelete.TabIndex = 30;
+            this.searchDelete.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
+            // 
+            // projectSelectorUpdate
+            // 
+            this.projectSelectorUpdate.FormattingEnabled = true;
+            this.projectSelectorUpdate.Location = new System.Drawing.Point(143, 263);
+            this.projectSelectorUpdate.Name = "projectSelectorUpdate";
+            this.projectSelectorUpdate.Size = new System.Drawing.Size(253, 24);
+            this.projectSelectorUpdate.TabIndex = 46;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(71, 360);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 16);
+            this.label8.TabIndex = 47;
+            this.label8.Text = "Role:";
+            // 
+            // departmentDelete
+            // 
+            this.departmentDelete.AutoSize = true;
+            this.departmentDelete.Location = new System.Drawing.Point(141, 304);
+            this.departmentDelete.Name = "departmentDelete";
+            this.departmentDelete.Size = new System.Drawing.Size(0, 16);
+            this.departmentDelete.TabIndex = 48;
+            // 
+            // birthdayPickerDelete
+            // 
+            this.birthdayPickerDelete.Location = new System.Drawing.Point(255, 214);
+            this.birthdayPickerDelete.Name = "birthdayPickerDelete";
+            this.birthdayPickerDelete.Size = new System.Drawing.Size(265, 22);
+            this.birthdayPickerDelete.TabIndex = 49;
+            this.birthdayPickerDelete.Value = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(54, 267);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 16);
+            this.label9.TabIndex = 50;
+            this.label9.Text = "Project";
+            // 
+            // roleDelete
+            // 
+            this.roleDelete.Location = new System.Drawing.Point(139, 357);
+            this.roleDelete.Name = "roleDelete";
+            this.roleDelete.Size = new System.Drawing.Size(226, 22);
+            this.roleDelete.TabIndex = 51;
             // 
             // delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.roleDelete);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.birthdayPickerDelete);
+            this.Controls.Add(this.departmentDelete);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.projectSelectorUpdate);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.searchBox);
+            this.Controls.Add(this.searchDelete);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.addressDelete);
+            this.Controls.Add(this.ageDelete);
+            this.Controls.Add(this.salaryDelete);
+            this.Controls.Add(this.nameDelete);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -220,12 +265,10 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox addressDelete;
+        private System.Windows.Forms.TextBox ageDelete;
+        private System.Windows.Forms.TextBox salaryDelete;
+        private System.Windows.Forms.TextBox nameDelete;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -234,6 +277,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.TextBox searchDelete;
+        private System.Windows.Forms.ComboBox projectSelectorUpdate;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label departmentDelete;
+        private System.Windows.Forms.DateTimePicker birthdayPickerDelete;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox roleDelete;
     }
 }
