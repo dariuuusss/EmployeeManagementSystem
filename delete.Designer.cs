@@ -30,10 +30,6 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.addressDelete = new System.Windows.Forms.TextBox();
-            this.ageDelete = new System.Windows.Forms.TextBox();
-            this.salaryDelete = new System.Windows.Forms.TextBox();
-            this.nameDelete = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,12 +39,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.searchDelete = new System.Windows.Forms.TextBox();
-            this.projectSelectorUpdate = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.departmentDelete = new System.Windows.Forms.Label();
-            this.birthdayPickerDelete = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.roleDelete = new System.Windows.Forms.TextBox();
+            this.nameDelete = new System.Windows.Forms.Label();
+            this.roleDelete = new System.Windows.Forms.Label();
+            this.salaryDelete = new System.Windows.Forms.Label();
+            this.projectDelete = new System.Windows.Forms.Label();
+            this.ageDelete = new System.Windows.Forms.Label();
+            this.addressDelete = new System.Windows.Forms.Label();
+            this.birthdayDelete = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -70,34 +70,6 @@
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // addressDelete
-            // 
-            this.addressDelete.Location = new System.Drawing.Point(105, 169);
-            this.addressDelete.Name = "addressDelete";
-            this.addressDelete.Size = new System.Drawing.Size(628, 22);
-            this.addressDelete.TabIndex = 27;
-            // 
-            // ageDelete
-            // 
-            this.ageDelete.Location = new System.Drawing.Point(79, 214);
-            this.ageDelete.Name = "ageDelete";
-            this.ageDelete.Size = new System.Drawing.Size(53, 22);
-            this.ageDelete.TabIndex = 26;
-            // 
-            // salaryDelete
-            // 
-            this.salaryDelete.Location = new System.Drawing.Point(142, 320);
-            this.salaryDelete.Name = "salaryDelete";
-            this.salaryDelete.Size = new System.Drawing.Size(254, 22);
-            this.salaryDelete.TabIndex = 25;
-            // 
-            // nameDelete
-            // 
-            this.nameDelete.Location = new System.Drawing.Point(91, 127);
-            this.nameDelete.Name = "nameDelete";
-            this.nameDelete.Size = new System.Drawing.Size(619, 22);
-            this.nameDelete.TabIndex = 22;
             // 
             // label7
             // 
@@ -179,14 +151,6 @@
             this.searchDelete.TabIndex = 30;
             this.searchDelete.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
-            // projectSelectorUpdate
-            // 
-            this.projectSelectorUpdate.FormattingEnabled = true;
-            this.projectSelectorUpdate.Location = new System.Drawing.Point(143, 263);
-            this.projectSelectorUpdate.Name = "projectSelectorUpdate";
-            this.projectSelectorUpdate.Size = new System.Drawing.Size(253, 24);
-            this.projectSelectorUpdate.TabIndex = 46;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -199,18 +163,10 @@
             // departmentDelete
             // 
             this.departmentDelete.AutoSize = true;
-            this.departmentDelete.Location = new System.Drawing.Point(141, 304);
+            this.departmentDelete.Location = new System.Drawing.Point(141, 295);
             this.departmentDelete.Name = "departmentDelete";
             this.departmentDelete.Size = new System.Drawing.Size(0, 16);
             this.departmentDelete.TabIndex = 48;
-            // 
-            // birthdayPickerDelete
-            // 
-            this.birthdayPickerDelete.Location = new System.Drawing.Point(255, 214);
-            this.birthdayPickerDelete.Name = "birthdayPickerDelete";
-            this.birthdayPickerDelete.Size = new System.Drawing.Size(265, 22);
-            this.birthdayPickerDelete.TabIndex = 49;
-            this.birthdayPickerDelete.Value = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
             // 
             // label9
             // 
@@ -221,32 +177,81 @@
             this.label9.TabIndex = 50;
             this.label9.Text = "Project";
             // 
+            // nameDelete
+            // 
+            this.nameDelete.AutoSize = true;
+            this.nameDelete.Location = new System.Drawing.Point(95, 133);
+            this.nameDelete.Name = "nameDelete";
+            this.nameDelete.Size = new System.Drawing.Size(0, 16);
+            this.nameDelete.TabIndex = 51;
+            // 
             // roleDelete
             // 
-            this.roleDelete.Location = new System.Drawing.Point(139, 357);
+            this.roleDelete.AutoSize = true;
+            this.roleDelete.Location = new System.Drawing.Point(125, 360);
             this.roleDelete.Name = "roleDelete";
-            this.roleDelete.Size = new System.Drawing.Size(226, 22);
-            this.roleDelete.TabIndex = 51;
+            this.roleDelete.Size = new System.Drawing.Size(0, 16);
+            this.roleDelete.TabIndex = 52;
+            // 
+            // salaryDelete
+            // 
+            this.salaryDelete.AutoSize = true;
+            this.salaryDelete.Location = new System.Drawing.Point(116, 326);
+            this.salaryDelete.Name = "salaryDelete";
+            this.salaryDelete.Size = new System.Drawing.Size(0, 16);
+            this.salaryDelete.TabIndex = 53;
+            // 
+            // projectDelete
+            // 
+            this.projectDelete.AutoSize = true;
+            this.projectDelete.Location = new System.Drawing.Point(109, 267);
+            this.projectDelete.Name = "projectDelete";
+            this.projectDelete.Size = new System.Drawing.Size(0, 16);
+            this.projectDelete.TabIndex = 54;
+            // 
+            // ageDelete
+            // 
+            this.ageDelete.AutoSize = true;
+            this.ageDelete.Location = new System.Drawing.Point(81, 220);
+            this.ageDelete.Name = "ageDelete";
+            this.ageDelete.Size = new System.Drawing.Size(0, 16);
+            this.ageDelete.TabIndex = 55;
+            // 
+            // addressDelete
+            // 
+            this.addressDelete.AutoSize = true;
+            this.addressDelete.Location = new System.Drawing.Point(115, 175);
+            this.addressDelete.Name = "addressDelete";
+            this.addressDelete.Size = new System.Drawing.Size(0, 16);
+            this.addressDelete.TabIndex = 56;
+            // 
+            // birthdayDelete
+            // 
+            this.birthdayDelete.AutoSize = true;
+            this.birthdayDelete.Location = new System.Drawing.Point(245, 217);
+            this.birthdayDelete.Name = "birthdayDelete";
+            this.birthdayDelete.Size = new System.Drawing.Size(0, 16);
+            this.birthdayDelete.TabIndex = 57;
             // 
             // delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.birthdayDelete);
+            this.Controls.Add(this.addressDelete);
+            this.Controls.Add(this.ageDelete);
+            this.Controls.Add(this.projectDelete);
+            this.Controls.Add(this.salaryDelete);
             this.Controls.Add(this.roleDelete);
+            this.Controls.Add(this.nameDelete);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.birthdayPickerDelete);
             this.Controls.Add(this.departmentDelete);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.projectSelectorUpdate);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.searchDelete);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.addressDelete);
-            this.Controls.Add(this.ageDelete);
-            this.Controls.Add(this.salaryDelete);
-            this.Controls.Add(this.nameDelete);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -265,10 +270,6 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox addressDelete;
-        private System.Windows.Forms.TextBox ageDelete;
-        private System.Windows.Forms.TextBox salaryDelete;
-        private System.Windows.Forms.TextBox nameDelete;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -278,11 +279,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox searchDelete;
-        private System.Windows.Forms.ComboBox projectSelectorUpdate;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label departmentDelete;
-        private System.Windows.Forms.DateTimePicker birthdayPickerDelete;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox roleDelete;
+        private System.Windows.Forms.Label nameDelete;
+        private System.Windows.Forms.Label roleDelete;
+        private System.Windows.Forms.Label salaryDelete;
+        private System.Windows.Forms.Label projectDelete;
+        private System.Windows.Forms.Label ageDelete;
+        private System.Windows.Forms.Label addressDelete;
+        private System.Windows.Forms.Label birthdayDelete;
     }
 }

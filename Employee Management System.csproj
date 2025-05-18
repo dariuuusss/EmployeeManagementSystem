@@ -108,6 +108,12 @@
     <Compile Include="add.Designer.cs">
       <DependentUpon>add.cs</DependentUpon>
     </Compile>
+    <Compile Include="attendanceMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendanceMode.Designer.cs">
+      <DependentUpon>attendanceMode.cs</DependentUpon>
+    </Compile>
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </Compile>
     <EmbeddedResource Include="add.resx">
       <DependentUpon>add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendanceMode.resx">
+      <DependentUpon>attendanceMode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>

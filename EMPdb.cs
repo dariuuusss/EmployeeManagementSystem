@@ -338,8 +338,10 @@ namespace Employee_Management_System
                 attendance_id AS 'Attendance ID', 
                 employee_id AS 'Employee ID', 
                 date AS 'Date', 
-                status AS 'Status'
-            FROM attendance";
+                status AS 'Status',
+                punch_time AS 'Time'
+            FROM attendance
+            ORDER BY date DESC, punch_time DESC";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -347,9 +349,7 @@ namespace Employee_Management_System
                     adapter.Fill(dt);
                 }
             }
-
             return dt;
-
         }
 
         public DataTable GetAllEmployees()
@@ -429,5 +429,92 @@ namespace Employee_Management_System
             public string password { get; set; }
             public string Email { get; set; }
         }
+
+        public bool DoesEmployeeExist(string employeeId)
+        {
+            // Query the database to check if the employee exists
+
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM employee WHERE employee_id = @employeeId";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@employeeId", employeeId);
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    return count > 0;
+                }
+                    
+            }
+        }
+
+        public string GetAttendanceStatus(string employeeId, DateTime date)
+        {
+            string status = null;
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = @"
+                    SELECT status 
+                    FROM attendance 
+                    WHERE employee_id = @employeeId 
+                    AND DATE(date) = DATE(@date)
+                    ORDER BY punch_time DESC
+                    LIMIT 1";
+                
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@employeeId", employeeId);
+                    cmd.Parameters.AddWithValue("@date", date);
+                    var result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        status = result.ToString();
+                    }
+                    return status;
+                }
+            }
+        }
+
+        public void RecordAttendance(string employeeId, string status)
+        {
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                DateTime now = DateTime.Now;
+
+                // Check if the last status is the same as the current status
+                string lastStatus = GetAttendanceStatus(employeeId, now);
+                if (lastStatus == status)
+                {
+                    MessageBox.Show($"You have already recorded {status} for today.", "Warning", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // If trying to record OUT without IN
+                if (status == "OUT" && (lastStatus == null || lastStatus != "IN"))
+                {
+                    MessageBox.Show("You need to record IN first before recording OUT.", "Warning", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string query = @"
+                    INSERT INTO attendance (employee_id, date, status, punch_time) 
+                    VALUES (@employeeId, @date, @status, @punchTime)";
+                
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@employeeId", employeeId);
+                    cmd.Parameters.AddWithValue("@date", now.Date);
+                    cmd.Parameters.AddWithValue("@status", status);
+                    cmd.Parameters.AddWithValue("@punchTime", now.TimeOfDay);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
     }
 }

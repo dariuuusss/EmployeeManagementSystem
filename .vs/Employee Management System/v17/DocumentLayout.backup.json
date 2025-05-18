@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|c:\\users\\darius\\desktop\\bicol university\\edp\\employeemanagementsystem\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|c:\\users\\darius\\desktop\\bicol university\\edp\\employeemanagementsystem\\empdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:empdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\attendancemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:attendancemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\attendancemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:attendancemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -25,26 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|c:\\users\\darius\\desktop\\bicol university\\edp\\employeemanagementsystem\\empdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:empdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6C8DC3F-7374-41F9-91F7-7E4EE03F9F15}|Employee Management System.csproj|C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,136 +78,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "attendanceMode.cs",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\attendanceMode.cs",
+              "RelativeDocumentMoniker": "attendanceMode.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\attendanceMode.cs",
+              "RelativeToolTip": "attendanceMode.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAmwDQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T01:11:49.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dashboard.cs",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs",
-              "RelativeDocumentMoniker": "dashboard.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs",
-              "RelativeToolTip": "dashboard.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAEwGsAAAANAAAAAAAAAA==",
+              "Title": "attendanceMode.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\attendanceMode.cs",
+              "RelativeDocumentMoniker": "attendanceMode.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\attendanceMode.cs [Design]",
+              "RelativeToolTip": "attendanceMode.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:23:25.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "delete.cs",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs",
-              "RelativeDocumentMoniker": "delete.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs",
-              "RelativeToolTip": "delete.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAACcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T03:22:56.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "delete.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs",
-              "RelativeDocumentMoniker": "delete.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs [Design]",
-              "RelativeToolTip": "delete.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T09:36:40.182Z",
+              "WhenOpened": "2025-05-18T01:03:28.495Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "EMPdb.cs",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\EMPdb.cs",
-              "RelativeDocumentMoniker": "EMPdb.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\EMPdb.cs",
-              "RelativeToolTip": "EMPdb.cs",
-              "ViewState": "AgIAADUBAAAAAAAAAAApwDoBAABKAAAAAAAAAA==",
+              "Title": "delete.cs",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs",
+              "RelativeDocumentMoniker": "delete.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs",
+              "RelativeToolTip": "delete.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAApwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T23:21:06.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T03:22:56.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "add.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs",
-              "RelativeDocumentMoniker": "add.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs [Design]",
-              "RelativeToolTip": "add.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T07:30:02.164Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "add.cs",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs",
-              "RelativeDocumentMoniker": "add.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs",
-              "RelativeToolTip": "add.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAtwD8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T07:51:13.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "update.cs",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs",
-              "RelativeDocumentMoniker": "update.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs",
-              "RelativeToolTip": "update.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAkwKEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T08:56:27.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "update.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs",
-              "RelativeDocumentMoniker": "update.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs [Design]",
-              "RelativeToolTip": "update.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T08:50:21.286Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs",
-              "RelativeDocumentMoniker": "dashboard.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs [Design]",
-              "RelativeToolTip": "dashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T01:23:23.626Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAqwCQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T03:12:19.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -210,7 +130,112 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAhwEkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T03:12:19.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs",
+              "RelativeDocumentMoniker": "dashboard.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs [Design]",
+              "RelativeToolTip": "dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T01:23:23.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EMPdb.cs",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\EMPdb.cs",
+              "RelativeDocumentMoniker": "EMPdb.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\EMPdb.cs",
+              "RelativeToolTip": "EMPdb.cs",
+              "ViewState": "AgIAAMwBAAAAAAAAAAAmwN8BAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T23:21:06.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "delete.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs",
+              "RelativeDocumentMoniker": "delete.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\delete.cs [Design]",
+              "RelativeToolTip": "delete.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:36:40.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs",
+              "RelativeDocumentMoniker": "dashboard.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\dashboard.cs",
+              "RelativeToolTip": "dashboard.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAawMkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T01:23:25.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "add.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs",
+              "RelativeDocumentMoniker": "add.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs [Design]",
+              "RelativeToolTip": "add.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T07:30:02.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "add.cs",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs",
+              "RelativeDocumentMoniker": "add.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\add.cs",
+              "RelativeToolTip": "add.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAtwD8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T07:51:13.557Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "update.cs",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs",
+              "RelativeDocumentMoniker": "update.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs",
+              "RelativeToolTip": "update.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAkwKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T08:56:27.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "update.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs",
+              "RelativeDocumentMoniker": "update.cs",
+              "ToolTip": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\update.cs [Design]",
+              "RelativeToolTip": "update.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T08:50:21.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\Employee.cs",
               "RelativeDocumentMoniker": "Employee.cs",
@@ -222,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "signUp.cs",
               "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\signUp.cs",
               "RelativeDocumentMoniker": "signUp.cs",
@@ -234,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "signUp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\signUp.cs",
               "RelativeDocumentMoniker": "signUp.cs",
@@ -245,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Darius\\Desktop\\Bicol University\\EDP\\EmployeeManagementSystem\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",

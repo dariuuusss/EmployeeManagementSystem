@@ -15,22 +15,6 @@ namespace Employee_Management_System
         public delete()
         {
             InitializeComponent();
-            LoadProjectNames();
-        }
-        private void LoadProjectNames()
-        {
-            EMPdb db = new EMPdb();
-            List<string> projectNames = db.GetProjectNames();
-
-            if (projectNames.Count > 0)
-            {
-                projectSelectorUpdate.Items.Clear();  // Clear existing items
-                projectSelectorUpdate.Items.AddRange(projectNames.ToArray());  // Add new items
-            }
-            else
-            {
-                MessageBox.Show("No projects found in the database.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
         private Employee selectedEmployee;
         EMPdb db = new EMPdb();
@@ -49,23 +33,16 @@ namespace Employee_Management_System
 
             if (results.Count > 0)
             {
-                selectedEmployee = results[0]; // Assume first match (you can extend this with list selection if needed)
+                selectedEmployee = results[0];
 
                 nameDelete.Text = selectedEmployee.Name;
                 addressDelete.Text = selectedEmployee.Address;
                 ageDelete.Text = selectedEmployee.Age.ToString();
-                if (selectedEmployee.Birthday < birthdayPickerDelete.MinDate)
-                {
-                    birthdayPickerDelete.Value = birthdayPickerDelete.MinDate;
-                }
-                else
-                {
-                    birthdayPickerDelete.Value = selectedEmployee.Birthday;
-                }
+                birthdayDelete.Text = selectedEmployee.Birthday.ToString();
 
                 salaryDelete.Text = selectedEmployee.Salary.ToString();
                 roleDelete.Text = selectedEmployee.Role;
-                projectSelectorUpdate.SelectedItem = selectedEmployee.ProjectName;
+                projectDelete.Text = selectedEmployee.ProjectName;
 
                 // Update department field based on project
                 departmentDelete.Text = db.GetDepartmentByProjectName(selectedEmployee.ProjectName);

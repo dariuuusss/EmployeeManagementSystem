@@ -194,5 +194,12 @@ namespace Employee_Management_System
         {
 
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            attendanceMode attendanceMode = new attendanceMode();
+            attendanceMode.Show();
+            this.Hide();
+        }
     }
 }
