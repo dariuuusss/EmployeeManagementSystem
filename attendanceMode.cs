@@ -51,7 +51,6 @@ namespace Employee_Management_System
 
                 // Record time in
                 empDb.RecordAttendance(employeeId, "IN");
-                MessageBox.Show("Time IN recorded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 textBox1.Clear(); // Clear the input after successful recording
             }
             catch (Exception ex)
@@ -82,7 +81,7 @@ namespace Employee_Management_System
 
                 // Record time out
                 empDb.RecordAttendance(employeeId, "OUT");
-                MessageBox.Show("Time OUT recorded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
                 textBox1.Clear(); // Clear the input after successful recording
             }
             catch (Exception ex)

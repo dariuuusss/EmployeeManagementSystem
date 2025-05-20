@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-
-
 namespace Employee_Management_System
 {
     public partial class add : Form
@@ -36,7 +34,6 @@ namespace Employee_Management_System
                 MessageBox.Show("No projects found in the database.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -80,7 +77,6 @@ namespace Employee_Management_System
 
             if (isSuccess)
             {
-
                 MessageBox.Show("Employee added successfully.");
                 this.DialogResult = DialogResult.OK;  // Set the dialog result to OK to indicate success
                 this.Close();

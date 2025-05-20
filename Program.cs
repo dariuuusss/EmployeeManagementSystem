@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Employee_Management_System
 {
-    internal static class Program
+    static class Program
     {
         /// <summary>
         /// The main entry point for the application.

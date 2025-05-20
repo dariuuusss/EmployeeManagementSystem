@@ -1,4 +1,13 @@
-﻿namespace Employee_Management_System
+﻿using System;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+using System.Collections.Generic;
+
+namespace Employee_Management_System
 {
     partial class dashboard
     {
@@ -30,6 +39,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.resultBox = new System.Windows.Forms.ListBox();
             this.LogOut = new System.Windows.Forms.Button();
@@ -39,15 +49,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.attendanceExport = new System.Windows.Forms.Button();
             this.DGattendance = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.employeeExport = new System.Windows.Forms.Button();
             this.DGemployee = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.logsExport = new System.Windows.Forms.Button();
             this.DGlogs = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -89,6 +101,16 @@
             this.tabPage1.Text = "Home";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(830, 60);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 50);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Attendance Mode";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -110,9 +132,9 @@
             // 
             // LogOut
             // 
-            this.LogOut.Location = new System.Drawing.Point(854, 6);
+            this.LogOut.Location = new System.Drawing.Point(830, 6);
             this.LogOut.Name = "LogOut";
-            this.LogOut.Size = new System.Drawing.Size(85, 25);
+            this.LogOut.Size = new System.Drawing.Size(109, 33);
             this.LogOut.TabIndex = 8;
             this.LogOut.Text = "Log Out";
             this.LogOut.UseVisualStyleBackColor = true;
@@ -172,6 +194,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.attendanceExport);
             this.tabPage2.Controls.Add(this.DGattendance);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -182,6 +205,16 @@
             this.tabPage2.Text = "Attendance";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // attendanceExport
+            // 
+            this.attendanceExport.Location = new System.Drawing.Point(827, 372);
+            this.attendanceExport.Name = "attendanceExport";
+            this.attendanceExport.Size = new System.Drawing.Size(117, 48);
+            this.attendanceExport.TabIndex = 2;
+            this.attendanceExport.Text = "Export";
+            this.attendanceExport.UseVisualStyleBackColor = true;
+            this.attendanceExport.Click += new System.EventHandler(this.attendanceExport_Click);
+            // 
             // DGattendance
             // 
             this.DGattendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -189,7 +222,7 @@
             this.DGattendance.Name = "DGattendance";
             this.DGattendance.RowHeadersWidth = 51;
             this.DGattendance.RowTemplate.Height = 24;
-            this.DGattendance.Size = new System.Drawing.Size(945, 391);
+            this.DGattendance.Size = new System.Drawing.Size(945, 343);
             this.DGattendance.TabIndex = 1;
             this.DGattendance.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -201,9 +234,11 @@
             this.label2.Size = new System.Drawing.Size(159, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "attendance of employees";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.employeeExport);
             this.tabPage3.Controls.Add(this.DGemployee);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -214,6 +249,16 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
+            // employeeExport
+            // 
+            this.employeeExport.Location = new System.Drawing.Point(822, 374);
+            this.employeeExport.Name = "employeeExport";
+            this.employeeExport.Size = new System.Drawing.Size(122, 46);
+            this.employeeExport.TabIndex = 2;
+            this.employeeExport.Text = "Export";
+            this.employeeExport.UseVisualStyleBackColor = true;
+            this.employeeExport.Click += new System.EventHandler(this.employeeExport_Click);
+            // 
             // DGemployee
             // 
             this.DGemployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -222,7 +267,7 @@
             this.DGemployee.Name = "DGemployee";
             this.DGemployee.RowHeadersWidth = 51;
             this.DGemployee.RowTemplate.Height = 24;
-            this.DGemployee.Size = new System.Drawing.Size(944, 390);
+            this.DGemployee.Size = new System.Drawing.Size(944, 354);
             this.DGemployee.TabIndex = 1;
             this.DGemployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGemployee_CellContentClick);
             // 
@@ -238,6 +283,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.logsExport);
             this.tabPage4.Controls.Add(this.DGlogs);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
@@ -247,6 +293,16 @@
             this.tabPage4.Text = "Logs";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // logsExport
+            // 
+            this.logsExport.Location = new System.Drawing.Point(834, 379);
+            this.logsExport.Name = "logsExport";
+            this.logsExport.Size = new System.Drawing.Size(110, 41);
+            this.logsExport.TabIndex = 2;
+            this.logsExport.Text = "Export";
+            this.logsExport.UseVisualStyleBackColor = true;
+            this.logsExport.Click += new System.EventHandler(this.logsExport_Click);
+            // 
             // DGlogs
             // 
             this.DGlogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -254,7 +310,7 @@
             this.DGlogs.Name = "DGlogs";
             this.DGlogs.RowHeadersWidth = 51;
             this.DGlogs.RowTemplate.Height = 24;
-            this.DGlogs.Size = new System.Drawing.Size(940, 405);
+            this.DGlogs.Size = new System.Drawing.Size(940, 357);
             this.DGlogs.TabIndex = 1;
             // 
             // label4
@@ -265,16 +321,6 @@
             this.label4.Size = new System.Drawing.Size(114, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "logs of processes";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(854, 43);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 50);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Attendance Mode";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // dashboard
             // 
@@ -323,5 +369,8 @@
         private System.Windows.Forms.ListBox resultBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
+        private Button attendanceExport;
+        private Button employeeExport;
+        private Button logsExport;
     }
 }

@@ -1,4 +1,12 @@
-﻿namespace Employee_Management_System
+﻿using System;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+
+namespace Employee_Management_System
 {
     partial class add
     {
@@ -250,7 +258,6 @@
             this.Load += new System.EventHandler(this.add_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

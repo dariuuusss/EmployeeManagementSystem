@@ -1,4 +1,12 @@
-﻿namespace Employee_Management_System
+﻿using System;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+
+namespace Employee_Management_System
 {
     partial class Form1
     {
@@ -77,7 +85,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 161);
+            this.label1.Location = new System.Drawing.Point(48, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 4;
@@ -87,7 +95,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 205);
+            this.label2.Location = new System.Drawing.Point(48, 202);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 5;

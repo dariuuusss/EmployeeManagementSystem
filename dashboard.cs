@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
 
 namespace Employee_Management_System
 {
@@ -22,8 +23,8 @@ namespace Employee_Management_System
             searchBox.Leave += searchBox_Leave;
             db = new EMPdb();
             ReloadEmployeeData();
-
         }
+
         public void ReloadEmployeeData()
         {
             DGemployee.DataSource = db.GetAllEmployees();
@@ -200,6 +201,67 @@ namespace Employee_Management_System
             attendanceMode attendanceMode = new attendanceMode();
             attendanceMode.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExportToExcel(DataGridView dgv, string fileName)
+        {
+            try
+            {
+                Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+                excel.Visible = false;
+                Workbook workbook = excel.Workbooks.Add();
+                Worksheet worksheet = workbook.Worksheets[1];
+
+                // Export headers
+                for (int i = 1; i <= dgv.Columns.Count; i++)
+                {
+                    worksheet.Cells[1, i] = dgv.Columns[i - 1].HeaderText;
+                }
+
+                // Export data
+                for (int i = 0; i < dgv.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dgv.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = dgv.Rows[i].Cells[j].Value?.ToString() ?? "";
+                    }
+                }
+
+                // Auto-fit columns
+                worksheet.Columns.AutoFit();
+
+                // Save the file
+                string savePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), fileName);
+                workbook.SaveAs(savePath);
+                workbook.Close();
+                excel.Quit();
+
+                MessageBox.Show($"File exported successfully to: {savePath}", "Export Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error exporting to Excel: {ex.Message}", "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void attendanceExport_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(DGattendance, "Attendance_Report.xlsx");
+        }
+
+        private void employeeExport_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(DGemployee, "Employee_List.xlsx");
+        }
+
+        private void logsExport_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(DGlogs, "System_Logs.xlsx");
         }
     }
 }
