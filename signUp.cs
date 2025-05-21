@@ -70,5 +70,12 @@ namespace Employee_Management_System
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
+        }
     }
 }

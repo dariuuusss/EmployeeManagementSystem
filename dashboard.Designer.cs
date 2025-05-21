@@ -207,9 +207,9 @@ namespace Employee_Management_System
             // 
             // attendanceExport
             // 
-            this.attendanceExport.Location = new System.Drawing.Point(827, 372);
+            this.attendanceExport.Location = new System.Drawing.Point(828, 373);
             this.attendanceExport.Name = "attendanceExport";
-            this.attendanceExport.Size = new System.Drawing.Size(117, 48);
+            this.attendanceExport.Size = new System.Drawing.Size(111, 42);
             this.attendanceExport.TabIndex = 2;
             this.attendanceExport.Text = "Export";
             this.attendanceExport.UseVisualStyleBackColor = true;
@@ -222,18 +222,18 @@ namespace Employee_Management_System
             this.DGattendance.Name = "DGattendance";
             this.DGattendance.RowHeadersWidth = 51;
             this.DGattendance.RowTemplate.Height = 24;
-            this.DGattendance.Size = new System.Drawing.Size(945, 343);
+            this.DGattendance.Size = new System.Drawing.Size(945, 332);
             this.DGattendance.TabIndex = 1;
             this.DGattendance.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(392, 3);
+            this.label2.Location = new System.Drawing.Point(361, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 16);
+            this.label2.Size = new System.Drawing.Size(206, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "attendance of employees";
+            this.label2.Text = "ATTENDANCE OF EMPLOYEES";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tabPage3
@@ -251,9 +251,9 @@ namespace Employee_Management_System
             // 
             // employeeExport
             // 
-            this.employeeExport.Location = new System.Drawing.Point(822, 374);
+            this.employeeExport.Location = new System.Drawing.Point(828, 374);
             this.employeeExport.Name = "employeeExport";
-            this.employeeExport.Size = new System.Drawing.Size(122, 46);
+            this.employeeExport.Size = new System.Drawing.Size(114, 44);
             this.employeeExport.TabIndex = 2;
             this.employeeExport.Text = "Export";
             this.employeeExport.UseVisualStyleBackColor = true;
@@ -263,22 +263,22 @@ namespace Employee_Management_System
             // 
             this.DGemployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGemployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGemployee.Location = new System.Drawing.Point(4, 19);
+            this.DGemployee.Location = new System.Drawing.Point(0, 32);
             this.DGemployee.Name = "DGemployee";
             this.DGemployee.RowHeadersWidth = 51;
             this.DGemployee.RowTemplate.Height = 24;
-            this.DGemployee.Size = new System.Drawing.Size(944, 354);
+            this.DGemployee.Size = new System.Drawing.Size(948, 336);
             this.DGemployee.TabIndex = 1;
             this.DGemployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGemployee_CellContentClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(425, 0);
+            this.label3.Location = new System.Drawing.Point(388, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 16);
+            this.label3.Size = new System.Drawing.Size(141, 16);
             this.label3.TabIndex = 0;
-            this.label3.Text = "list of employees";
+            this.label3.Text = "LIST OF EMPLOYEES";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // tabPage4
@@ -306,21 +306,21 @@ namespace Employee_Management_System
             // DGlogs
             // 
             this.DGlogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGlogs.Location = new System.Drawing.Point(2, 19);
+            this.DGlogs.Location = new System.Drawing.Point(2, 31);
             this.DGlogs.Name = "DGlogs";
             this.DGlogs.RowHeadersWidth = 51;
             this.DGlogs.RowTemplate.Height = 24;
-            this.DGlogs.Size = new System.Drawing.Size(940, 357);
+            this.DGlogs.Size = new System.Drawing.Size(940, 345);
             this.DGlogs.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(434, 0);
+            this.label4.Location = new System.Drawing.Point(404, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 16);
+            this.label4.Size = new System.Drawing.Size(150, 16);
             this.label4.TabIndex = 0;
-            this.label4.Text = "logs of processes";
+            this.label4.Text = "LOGS OF PROCESSES";
             // 
             // dashboard
             // 

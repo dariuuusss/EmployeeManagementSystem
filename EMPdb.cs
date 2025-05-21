@@ -3,7 +3,7 @@ using Mysqlx.Datatypes;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SqlClient;    
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace Employee_Management_System
 {
     internal class EMPdb
     {
-        private readonly string connectionString = "server=localhost; database=ems; uid=root; pwd=''; Allow Zero Datetime=True; Convert Zero Datetime=True;";
+        private readonly string connectionString = "server=localhost; database=ems; uid=root; pwd='redish'; Allow Zero Datetime=True; Convert Zero Datetime=True;";
 
 
         public bool InsertUser(string username, string password, string email,

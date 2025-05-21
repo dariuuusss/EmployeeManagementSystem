@@ -235,8 +235,17 @@ namespace Employee_Management_System
                 // Auto-fit columns
                 worksheet.Columns.AutoFit();
 
-                // Save the file
-                string savePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), fileName);
+                // Get the application's directory and the Exported Files folder
+                string exportFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EMS", "Exported Files");
+
+                // Ensure the folder exists
+                if (!Directory.Exists(exportFolder))
+                {
+                    Directory.CreateDirectory(exportFolder);
+                }
+
+                // Save the file in the Exported Files folder
+                string savePath = Path.Combine(exportFolder, fileName);
                 workbook.SaveAs(savePath);
                 workbook.Close();
                 excel.Quit();
